@@ -1,7 +1,9 @@
 package Streams;
 
 import java.lang.String;
-import java.util.stream.Stream;
+import java.util.stream.*;
+import java.util.*;
+
 
 /**
  * basic string stream with sorting functionality using a filter to return the stream
@@ -39,6 +41,18 @@ public final class Filter {
         Stream.of("Phill","Andrew","Toni","Matthew","Emily","Megan","Robert","Olivia")
             .sorted()
             .forEach(x -> System.out.println(x));
+
+            System.out.println("--------------------------------------");
+
+            System.out.println("Sorted Stream removing words that do not start with M: ");
+            String[] names = {"Phill","Andrew","Toni","Matthew","Emily","Megan","Robert","Olivia"};
+            Stream.of(names)
+                .filter(x -> x.startsWith("M"))
+                .sorted()
+                .forEach(System.out::println);
+
+            System.out.println("--------------------------------------");
+    
 
         System.out.println("Finished with the Stream");
 

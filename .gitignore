@@ -1,0 +1,25 @@
+# Output directories
+target/
+bin/
+build/
+
+# Eclipse configuration
+.settings/
+.classpath
+.project
+.externalToolBuilders/
+
+# Idea configuration
+*.iml
+.idea/
+
+#VS Code
+.vscode/
+
+# OSX Files
+.DS_Store
+
+#JRebel
+rebel.xml
+/.metadata/
+
